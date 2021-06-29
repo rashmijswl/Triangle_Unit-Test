@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Triangle_Assignment2
 {
-    public class TriangleSolver
+    public static class TriangleSolver
     {
         public static string triangle_type = string.Empty;
 
-        public string Analyze(int a, int b, int c)
+        public static string Analyze(int a, int b, int c)
         {
             // checking sum of 2 sides
             int c1 = a + b;
@@ -29,14 +29,13 @@ namespace Triangle_Assignment2
                 else // it would be a scalene triangle if it is not a equlateral or isosceles
                 {
                     triangle_type = "Scalene";
-                }
-                return triangle_type;
+                }                
             }
             else
             {
-                triangle_type = "Not a Triangle";
-                return triangle_type;
-            }            
+                triangle_type = "Not a Triangle";               
+            }
+            return triangle_type;
         }
     }
 }
