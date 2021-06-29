@@ -10,6 +10,7 @@ namespace Triangle_Assignment2
 
         public string Analyze(int a, int b, int c)
         {
+            // checking sum of 2 sides
             int c1 = a + b;
             int b1 = a + c;
             int a1 = b + c;
