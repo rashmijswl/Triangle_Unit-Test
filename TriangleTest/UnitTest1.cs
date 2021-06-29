@@ -34,7 +34,7 @@ namespace TriangleTest
         [Test]
         public void TriangleTest_Scalene2()
         {
-            int a = 11, b = 3, c = 7; //arrange
+            int a = 11, b = 5, c = 7; //arrange
             string result = obj.Analyze(a, b, c); //act
             Assert.AreEqual(result, "Scalene"); //assert
         }
