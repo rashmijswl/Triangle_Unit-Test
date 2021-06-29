@@ -26,6 +26,7 @@ namespace Triangle_Assignment2
             do
             {
                 Console.WriteLine("Please choose:\n1.Enter Triangle Dimention\n2.Exit");
+                //validation_input has 2 string parameters user and messages to be  printed incase of incorrect input.
                 choice = Program.validation_input(Console.ReadLine(), "Please choose from:\n1.Enter Triangle Dimention\n2.Exit");
                 if(choice == 1)
                 {
