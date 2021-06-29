@@ -13,8 +13,10 @@ namespace Triangle_Assignment2
             int c1 = a + b;
             int b1 = a + c;
             int a1 = b + c;
+            //it would enter the if only if the sides satisfy the condition "sum of 2 sides is always greater than 3rd"
             if(c1>c && b1>b && a1>a)
             {
+                //if all 3 are equal only it enter equilateral else it would be isoceles if only 2 sides are equal
                 if(a == b && b == c && c == a)
                 {
                     triangle_type = "Equilateral";                
@@ -23,7 +25,7 @@ namespace Triangle_Assignment2
                 {
                     triangle_type = "Isosceles";
                 }
-                else
+                else // it would be a scalene triangle if it is not a equlateral or isosceles
                 {
                     triangle_type = "Scalene";
                 }
