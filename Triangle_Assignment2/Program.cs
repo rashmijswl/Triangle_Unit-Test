@@ -21,7 +21,6 @@ namespace Triangle_Assignment2
         }
         static void Main(string[] args)
         {
-            //TriangleSolver obj = new TriangleSolver();
             int valid_input = 0, choice =0;
             do
             {
@@ -31,11 +30,11 @@ namespace Triangle_Assignment2
                 if(choice == 1)
                 {
                     Console.WriteLine("Enter first side:");
-                    int a = Program.validation_input(Console.ReadLine(), "Enter first side");
+                    int a = Program.validation_input(Console.ReadLine(), "Enter first side:");
                     Console.WriteLine("Enter second side:");
-                    int b = Program.validation_input(Console.ReadLine(), "Enter second side");
+                    int b = Program.validation_input(Console.ReadLine(), "Enter second side:");
                     Console.WriteLine("Enter third side:");
-                    int c = Program.validation_input(Console.ReadLine(), "Enter third side");
+                    int c = Program.validation_input(Console.ReadLine(), "Enter third side:");
                     string triangle_type = TriangleSolver.Analyze(a, b, c);
                     if(triangle_type == "Not a Triangle")
                     {
@@ -43,7 +42,7 @@ namespace Triangle_Assignment2
                     }
                     else
                     {
-                        Console.WriteLine("A. The entered side forms a triangle\n B. Type: \"{0}\"\n", triangle_type);
+                        Console.WriteLine("A. The entered side forms a triangle\nB. Type: \"{0}\"\n", triangle_type);
                     }
                 }
                 else if (choice == 2)

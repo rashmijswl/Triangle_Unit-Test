@@ -11,10 +11,8 @@ namespace Triangle_Assignment2
         public static string Analyze(int a, int b, int c)
         {
             // checking sum of 2 sides
-            int c1 = a + b;
-            int b1 = a + c;
-            int a1 = b + c;
-            //it would enter the if only if the sides satisfy the condition "sum of 2 sides is always greater than 3rd"
+            int c1 = a + b, b1 = a + c, a1 = b + c;           
+            //it would enter the if only if the sides satisfy the condition "sum of any 2 sides is greater than 3rd"
             if(c1>c && b1>b && a1>a)
             {
                 //if all 3 are equal only it enter equilateral else it would be isoceles if only 2 sides are equal

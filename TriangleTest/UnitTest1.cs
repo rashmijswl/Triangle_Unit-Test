@@ -6,7 +6,6 @@ namespace TriangleTest
     [TestFixture]
     public class UnitTest1
     {
-        //TriangleSolver obj = new TriangleSolver();
 
         [Test]
         public void TriangleTest_NotaTriangle1()
